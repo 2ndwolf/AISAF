@@ -1,0 +1,12 @@
+*
+!include
+!include/**/**/**/**/**/*
+# include/old
+!src
+!src/**/**/**/**/**/*
+!ini
+!ini/*
+!CMakeLists.txt
+!.gitignore
+!readme.md
+# !versioninfo.rc
