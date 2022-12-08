@@ -1,5 +1,7 @@
 > AUDIO
+
 > INPUT
+
 SIMPLE AF
 
 This is an audio/input module using SDL
