@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.17)
-project(AISAF VERSION 1) 
+project(AISAF VERSION 1.0.0.1) 
 
 #Compiler Stuff
 set(MINGW_PATH "D:/MinGW/GCC12.2_64/bin")
@@ -8,7 +8,6 @@ set(CMAKE_CXX_COMPILER "${MINGW_PATH}/g++.exe")
 set(GENERATOR_NAME "MinGW Makefiles")
 
 set(CMAKE_CXX_STANDARD 20)
-# set(CMAKE_CXX_EXTENSIONS OFF)
 
 # SDL2 Stuff
 set(SDL2_VERSION       "2.26.0")
@@ -23,7 +22,6 @@ else()
 	set(sdl_p_folder x86_64-w64-mingw32)	
 endif()
 
-message(STATUS ${PROJECT_SOURCE_DIR}/dependencies/SDL2-${SDL2_VERSION}/${sdl_p_folder}/include/SDL2 )
 # Output
 # set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 # set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
@@ -47,7 +45,6 @@ set(SDL2_mixer_DIR ${PROJECT_SOURCE_DIR}/dependencies/SDL2_mixer-${SDL2_MIXER_VE
 find_package(SDL2       REQUIRED)
 find_package(SDL2_mixer REQUIRED)
 
-# set(CMAKE_CXX_STANDARD_LIBRARIES "-lmingw32 -lSDL2main -lSDL2 ${CMAKE_CXX_STANDARD_LIBRARIES}")
 
 if(NOT "${PROJECT_SOURCE_DIR}/ini/uPref.ini" STREQUAL "${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/ini/uPref.ini")
 	configure_file("${PROJECT_SOURCE_DIR}/ini/uPref.ini" "${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/ini/uPref.ini" COPYONLY)
