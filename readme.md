@@ -1,6 +1,6 @@
-> AUDIO
+# AUDIO
 
-> INPUT
+# INPUT
 
 SIMPLE AF
 
@@ -9,5 +9,4 @@ This is an audio/input module using SDL
 ini/uPref.ini contains the keybinds
 
 
-DISCLAIMER:
-This project is intended for my usage. No warranty whatsoever.
+(C) AISAF has the same license as SDL because it uses it
